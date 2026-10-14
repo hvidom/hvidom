@@ -1,0 +1,13 @@
+{
+  "name": "hvidom-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "art": "bun scripts/art.mjs",
+    "stats": "node scripts/stats.mjs",
+    "build": "bun scripts/art.mjs && node scripts/stats.mjs"
+  },
+  "devDependencies": {
+    "simple-icons": "^16.35.0"
+  }
+}
