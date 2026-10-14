@@ -15,7 +15,6 @@
   <a href="https://app.daily.dev/hvidom"><img src="https://img.shields.io/badge/daily.dev-Top_reader-CE3DF3?style=for-the-badge&labelColor=0b1130&logo=dailydotdev&logoColor=white" alt="daily.dev — Top reader"></a>
   <a href="mailto:devopsick@pm.me"><img src="https://img.shields.io/badge/Email-devopsick@pm.me-6D4AFF?style=for-the-badge&labelColor=0b1130&logo=protonmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/Frikadellios"><img src="https://img.shields.io/badge/Legacy-@Frikadellios-a78bfa?style=for-the-badge&labelColor=0b1130&logo=github&logoColor=white" alt="Legacy GitHub account @Frikadellios"></a>
-  <img src="https://komarev.com/ghpvc/?username=hvidom&label=Profile+views&color=22d3ee&style=for-the-badge&abbreviated=true" alt="Profile views">
 </p>
 
 <img src="assets/terminal.svg" width="100%" alt="Terminal running neofetch: Hryhorii Ilin, full-stack developer and ex-sales director in Dublin. Journey: 2011 Linux and infrastructure, 2015 full-stack developer, 2020 sales director, 2026 building Content Factory.">
