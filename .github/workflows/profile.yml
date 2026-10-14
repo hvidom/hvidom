@@ -20,19 +20,23 @@ concurrency:
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 2
 
-      - name: Space shooter
-        uses: czl9707/gh-space-shooter@v2
+      - uses: actions/setup-python@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: assets/generated/space-shooter.webp
-          fps: 30
-          no-commit: true
+          python-version: "3.13"
+
+      # CLI instead of the action: the released action always commits on its own.
+      - name: Space shooter
+        run: |
+          pip install --quiet gh-space-shooter==2.0.5
+          gh-space-shooter "${{ github.repository_owner }}" -o assets/generated/space-shooter.webp --fps 30
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Telemetry card
         run: node scripts/stats.mjs
